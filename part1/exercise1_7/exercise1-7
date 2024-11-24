@@ -1,0 +1,18 @@
+Script started on 2024-11-24 18:59:18+02:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="156" LINES="41"]
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1/exercise1_7[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1/exercise1_7[00m$ exitsudo docker run -it devopsdockeruh/pull_exerciseexit[Ksudo docker run -it devopsdockeruh/pull_exerciseexit[K[Ksudo docker run i[K-it curler
+[?2004l[sudo] password for oz: 
+Input website:
+helsinki.fi
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.24.0</center>
+</body>
+</html>
+Input website:
+^C[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1/exercise1_7[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1/exercise1_7[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-24 18:59:37+02:00 [COMMAND_EXIT_CODE="130"]
