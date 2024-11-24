@@ -1,0 +1,6 @@
+Script started on 2024-11-24 16:44:49+02:00 [COMMAND="sudo docker image ls; sudo docker ps -a" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="156" LINES="41"]
+[sudo] password for oz: 
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+Script done on 2024-11-24 16:44:50+02:00 [COMMAND_EXIT_CODE="0"]

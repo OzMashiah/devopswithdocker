@@ -1,0 +1,8 @@
+Script started on 2024-11-24 16:42:14+02:00 [COMMAND="sudo docker ps -a" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="30"]
+[sudo] password for oz: 
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                      PORTS     NAMES
+7efb22cc4879   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 48 seconds ago             agitated_dhawan
+424462b2fec7   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 52 seconds ago             zen_jennings
+3ab34723bcfa   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute           80/tcp    quizzical_vaughan
+
+Script done on 2024-11-24 16:42:17+02:00 [COMMAND_EXIT_CODE="0"]
