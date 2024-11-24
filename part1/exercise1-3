@@ -1,0 +1,17 @@
+Script started on 2024-11-24 17:29:05+02:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="156" LINES="41"]
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1[00m$ s[Ksudo docker container -[Krun -d [7mdevopsdockeruh/simple-web-service:ubuntu[27mdevopsdockeruh/simple-web-service:ubuntu
+[?2004l[sudo] password for oz: 
+271029054dce35544670c65179b186d81fb3e8252200789c89032aacb2e70168
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1[00m$ sudo docker container ps -a
+[?2004lCONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS         PORTS     NAMES
+271029054dce   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   5 seconds ago   Up 4 seconds             eager_ritchie
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1[00m$ sudo docker exec -c "tai[K[K[K[K[K[K[K271029054dce tail -5 ./text.log
+[?2004l2024-11-24 15:29:52 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-11-24 15:29:54 +0000 UTC
+2024-11-24 15:29:56 +0000 UTC
+2024-11-24 15:29:58 +0000 UTC
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-24 17:30:01+02:00 [COMMAND_EXIT_CODE="0"]
