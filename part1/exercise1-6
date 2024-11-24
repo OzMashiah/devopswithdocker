@@ -1,0 +1,11 @@
+Script started on 2024-11-24 18:27:58+02:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="156" LINES="41"]
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1[00m$ exitsudo docker run -it devopsdockeruh/pull_exercise
+[?2004l[sudo] password for oz: 
+[1G[0JGive me the password: [23Gbs[1G[0JGive me the password: b[24Gasics
+You found the correct password. Secret message is:
+"This is the secret message"
+
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-24 18:28:09+02:00 [COMMAND_EXIT_CODE="0"]

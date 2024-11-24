@@ -1,0 +1,21 @@
+Script started on 2024-11-24 18:24:08+02:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="156" LINES="41"]
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1[00m$ sudo docker exec it[K[K-it 17 sh
+[?2004l[sudo] password for oz: 
+/usr/src/app # [6ntail -5 ./tes[Jx/usr/src/app # tail -5 ./text.log [J
+2024-11-24 16:24:23 +0000 UTC
+2024-11-24 16:24:25 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-11-24 16:24:27 +0000 UTC
+2024-11-24 16:24:29 +0000 UTC
+/usr/src/app # [6nexit
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1[00m$ sudo docker image ls -a
+[?2004lREPOSITORY                          TAG               IMAGE ID       CREATED        SIZE
+ubuntu                              latest            fec8bfd95b54   5 weeks ago    78.1MB
+ubuntu                              22.04             97271d29cb79   2 months ago   77.9MB
+ubuntu                              jammy_jellyfish   97271d29cb79   2 months ago   77.9MB
+devopsdockeruh/simple-web-service   ubuntu            4e3362e907d5   3 years ago    83MB
+devopsdockeruh/simple-web-service   alpine            fd312adc88e0   3 years ago    15.7MB
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-24 18:24:41+02:00 [COMMAND_EXIT_CODE="0"]
