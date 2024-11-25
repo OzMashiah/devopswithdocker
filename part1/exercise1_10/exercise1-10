@@ -1,0 +1,9 @@
+Script started on 2024-11-25 10:32:14+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1/exercise1_10[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1/exercise1_10[00m$ sudo docker do[K[Kcontainer run -d -p 127.0.01[K.1:3456:8080 web-sere[Kver [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kr
+[?2004l[sudo] password for oz: 
+6f945db33f47ae4435fb9f04ac211dad51c6b68770c5c2a765db78e45610ff88
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1/exercise1_10[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1/exercise1_10[00m$ curl 127.0.0.0[K1:3456
+[?2004l{"message":"You connected to the following path: /","path":"/"}[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1/exercise1_10[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1/exercise1_10[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-25 10:32:44+02:00 [COMMAND_EXIT_CODE="0"]
