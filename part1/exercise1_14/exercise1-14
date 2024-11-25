@@ -1,0 +1,26 @@
+Script started on 2024-11-25 12:16:49+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="156" LINES="41"]
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1/exercise1_14[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1/exercise1_14[00m$ sudo docker container run -p 112[K[K27.0.0.1:5000:5000 exercise1-12
+[?2004l[sudo] password for oz: 
+ INFO  Accepting connections at http://localhost:5000
+^C^C^C
+got 3 SIGTERM/SIGINTs, forcefully exiting
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1/exercise1_14[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1/exercise1_14[00m$ sudo docker container run -p 127.0.0.1:5000:5000 exercise1-12[C[C[K3[1P[1P[1P[1P[1@8[1@0[1@8[1@0[C[C[C[C[C[1P exercise1-13[1P exercise1-13[1P exercise1-13[1P exercise1-138 exercise1-130 exercise1-138 exercise1-130 exercise1-13
+[?2004l[Ex 2.4+] REDIS_HOST env was not passed so redis connection is not initialized
+[Ex 2.6+] POSTGRES_HOST env was not passed so postgres connection is not initialized
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> server/router.pingpong (4 handlers)
+[GIN-debug] GET    /messages                 --> server/controller.GetMessages (4 handlers)
+[GIN-debug] POST   /messages                 --> server/controller.CreateMessage (4 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2024/11/25 - 10:17:25 | 200 |      130.74µs |      172.17.0.1 | GET      "/ping"
+^C^C^C
+got 3 SIGTERM/SIGINTs, forcefully exiting
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part1/exercise1_14[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part1/exercise1_14[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-25 12:17:29+02:00 [COMMAND_EXIT_CODE="1"]
