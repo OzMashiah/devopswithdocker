@@ -1,0 +1,34 @@
+services:
+
+  backend:
+    image: exercise1-13
+    build: .
+    ports:
+      - 127.0.0.1:8080:8080
+    container_name: backend
+    environment:
+      - REDIS_HOST=redis
+      - POSTGRES_HOST=db
+      - POSTGRES_PASSWORD=example
+  
+  redis:
+    container_name: redis
+    image: redis
+
+  frontend:
+    image: exercise1-12
+    build: .
+    ports:
+      - 127.0.0.1:5000:5000
+    container_name: frontend
+
+  db:
+    image: postgres:13.2-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: example
+    container_name: db_redmine
+    volumes:
+      - type: bind
+        source: ./database
+        target: /var/lib/postgresql/data
