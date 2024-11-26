@@ -1,0 +1,535 @@
+Script started on 2024-11-26 16:59:03+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="156" LINES="41"]
+[?2004h]0;root@DESKTOP-6SJ4ORQ: /home/oz/devopswithdocker/part2/material-applications/scaling-exerciseroot@DESKTOP-6SJ4ORQ:/home/oz/devopswithdocker/part2/material-applications/scaling-exercise# exit[1Ppwdexit[Ksudo docker compose[K[Kse up --scale compute=5
+[?2004l[33mWARN[0m[0000] /home/oz/devopswithdocker/part2/material-applications/scaling-exercise/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[1A[1B[0G[?25l[+] Running 7/0
+ [32m✔[0m Container scaling-exercise-compute-1  [32mCreated[0m                                                                                                       [34m0.0s [0m
+ [32m✔[0m Container calculator                  [32mCreated[0m                                                                                                       [34m0.0s [0m
+ [32m✔[0m Container load-balancer               [32mCreated[0m                                                                                                       [34m0.0s [0m
+ [32m✔[0m Container scaling-exercise-compute-2  [32mCreated[0m                                                                                                       [34m0.1s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mCreated[0m                                                                                                       [34m0.1s [0m
+ [32m✔[0m Container scaling-exercise-compute-3  [32mCreated[0m                                                                                                       [34m0.1s [0m
+ [32m✔[0m Container scaling-exercise-compute-4  [32mCreated[0m                                                                                                       [34m0.1s [0m
+[?25hAttaching to calculator, load-balancer, compute-1, compute-2, compute-3, compute-4, compute-5
+[36;1mcompute-4      | [0mI am alive in port 3000!
+[33mload-balancer  | [0mInfo: running nginx-proxy version 1.6.4-4-g57016e4
+[33mload-balancer  | [0mWarning: A custom dhparam.pem file was provided. Best practice is to use standardized RFC7919 DHE groups instead.
+[33mload-balancer  | [0mWarning: TRUST_DOWNSTREAM_PROXY is not set; defaulting to "true". For security, you should explicitly set TRUST_DOWNSTREAM_PROXY to "false" if there is not a trusted reverse proxy in front of this proxy.
+[33mload-balancer  | [0mWarning: The default value of TRUST_DOWNSTREAM_PROXY might change to "false" in a future version of nginx-proxy. If you require TRUST_DOWNSTREAM_PROXY to be enabled, explicitly set it to "true".
+[33mload-balancer  | [0m[0;37;1mforego      | [0mstarting dockergen.1 on port 5000
+[33mload-balancer  | [0m[0;37;1mforego      | [0mstarting nginx.1 on port 5100
+[33mload-balancer  | [0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: using the "epoll" event method
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: nginx/1.27.2
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: built by gcc 12.2.0 (Debian 12.2.0-14) 
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker processes
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 26
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 27
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 28
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 29
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 30
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 31
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 32
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 33
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:49 Generated '/etc/nginx/conf.d/default.conf' from 3 containers
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:49 Running 'nginx -s reload'
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 1 (SIGHUP) received from 36, reconfiguring
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: reconfiguring
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:49 Watching docker events
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: using the "epoll" event method
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker processes
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 40
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 41
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 42
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 43
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 44
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 45
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 46
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 47
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:49 Contents of /etc/nginx/conf.d/default.conf did not change. Skipping notification 'nginx -s reload'
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 26#26: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 27#27: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 28#28: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 29#29: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 30#30: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 32#32: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 26#26: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 29#29: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 27#27: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 28#28: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 30#30: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 32#32: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 33#33: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 33#33: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 28#28: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 27#27: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 32#32: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 29#29: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 30#30: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 31#31: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 31#31: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 31#31: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 33#33: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 26#26: exit
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:49 Received event start for container df73b8dbdd0b
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 27
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 27 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 31
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 31 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:49 Generated '/etc/nginx/conf.d/default.conf' from 4 containers
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:49 Running 'nginx -s reload'
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 29
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 29 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 28
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 28 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 30
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 30 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 33
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 33 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 1 (SIGHUP) received from 52, reconfiguring
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: reconfiguring
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: using the "epoll" event method
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker processes
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 53
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 54
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 55
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 56
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 57
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 58
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 59
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: start worker process 60
+[36mcalculator     | [0mUPDATE AVAILABLE The latest version of `serve` is 14.2.4
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 32
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 45#45: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 26 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 32 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 45#45: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 44#44: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 47#47: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 44#44: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 47#47: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 45#45: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 44#44: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 47#47: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 42#42: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 42#42: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 41#41: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 46#46: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 42#42: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 41#41: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 43#43: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 46#46: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 43#43: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 40#40: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 40#40: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 43#43: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 40#40: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 46#46: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 41#41: exit
+[36mcalculator     | [0mINFO: Accepting connections at http://localhost:3000
+[34mcompute-3      | [0mI am alive in port 3000!
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 45
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 45 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 46 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 42
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 42 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 40
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 40 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 44 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 47
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 47 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 43
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 43 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 17 (SIGCHLD) received from 41
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: worker process 41 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:49 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:50 Received event start for container 7ea9d25b975a
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:50 Generated '/etc/nginx/conf.d/default.conf' from 5 containers
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:50 Running 'nginx -s reload'
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 1 (SIGHUP) received from 62, reconfiguring
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: reconfiguring
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: using the "epoll" event method
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker processes
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 63
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 64
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 65
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 66
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 67
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 68
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 69
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 70
+[35mcompute-2      | [0mI am alive in port 3000!
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 54#54: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 55#55: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 53#53: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 57#57: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 59#59: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 54#54: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 57#57: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 55#55: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 53#53: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 59#59: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 57#57: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 54#54: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 55#55: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 53#53: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 59#59: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 60#60: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 58#58: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 58#58: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 60#60: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 58#58: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 56#56: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 60#60: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 56#56: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 56#56: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 60
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 55 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 59 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 60 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 55
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 54
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 54 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 56
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 53 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 56 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 57 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 58
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 58 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:50 Received event start for container 04e1074d5b1d
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:50 Generated '/etc/nginx/conf.d/default.conf' from 6 containers
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:50 Running 'nginx -s reload'
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 1 (SIGHUP) received from 72, reconfiguring
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: reconfiguring
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: using the "epoll" event method
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker processes
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 73
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 74
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 75
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 76
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 77
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 78
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 79
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 80
+[33;1mcompute-5      | [0mI am alive in port 3000!
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 64#64: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 65#65: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 63#63: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 69#69: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 68#68: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 64#64: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 68#68: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 63#63: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 65#65: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 69#69: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 68#68: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 64#64: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 65#65: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 63#63: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 66#66: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 69#69: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 66#66: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 67#67: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 67#67: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 70#70: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 70#70: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 70#70: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 67#67: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 66#66: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 64
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 64 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 68 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 70 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 66
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 66 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 63
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 63 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 69
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 69 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 65
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 65 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 17 (SIGCHLD) received from 67
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: worker process 67 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:50 Received event start for container 1de1e85d930f
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:50 Generated '/etc/nginx/conf.d/default.conf' from 7 containers
+[33mload-balancer  | [0m[0m[0;36;1mdockergen.1 | 2024/11/26 14:59:50 Running 'nginx -s reload'
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: signal 1 (SIGHUP) received from 82, reconfiguring
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: reconfiguring
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: using the "epoll" event method
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker processes
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 83
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 84
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 85
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 86
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 87
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 88
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 89
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 18#18: start worker process 90
+[32mcompute-1      | [0mI am alive in port 3000!
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 75#75: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 73#73: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 74#74: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 80#80: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 75#75: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 74#74: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 73#73: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 80#80: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 80#80: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 74#74: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 73#73: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 75#75: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 79#79: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 79#79: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 76#76: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 76#76: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 77#77: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 79#79: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 77#77: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 78#78: gracefully shutting down
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 78#78: exiting
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 76#76: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 77#77: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:50 [notice] 78#78: exit
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: signal 17 (SIGCHLD) received from 74
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: worker process 74 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: worker process 75 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: signal 17 (SIGCHLD) received from 79
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: worker process 78 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: worker process 79 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: signal 17 (SIGCHLD) received from 77
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: worker process 73 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: worker process 77 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: worker process 80 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: signal 17 (SIGCHLD) received from 80
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: signal 17 (SIGCHLD) received from 76
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: worker process 76 exited with code 0
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | 2024/11/26 14:59:51 [notice] 18#18: signal 29 (SIGIO) received
+[33mload-balancer  | [0m[0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:55 +0000] "OPTIONS / HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.2:3000"
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:55 +0000] "OPTIONS / HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.2:3000"
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:55 +0000] "OPTIONS / HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.2:3000"
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:55 +0000] "OPTIONS / HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.2:3000"
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:55 +0000] "OPTIONS / HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.2:3000"
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:55 +0000] "OPTIONS / HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.2:3000"
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:55 +0000] "OPTIONS / HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.5:3000"
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:55 +0000] "OPTIONS / HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.5:3000"
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:55 +0000] "OPTIONS / HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.5:3000"
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:55 +0000] "OPTIONS / HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.5:3000"
+[34mcompute-3      | [0mAdded to queue
+[34mcompute-3      | [0mStarted resolving loop
+[34mcompute-3      | [0mStarted calculations for 1 + 1
+[35mcompute-2      | [0mAdded to queue
+[35mcompute-2      | [0mStarted resolving loop
+[35mcompute-2      | [0mStarted calculations for 2 + 2
+[34mcompute-3      | [0mAdded to queue
+[35mcompute-2      | [0mAdded to queue
+[35mcompute-2      | [0mAdded to queue
+[35mcompute-2      | [0mAdded to queue
+[35mcompute-2      | [0mCalculated 2 + 2: 4
+[35mcompute-2      | [0mStarted calculations for 4 + 4
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:58 +0000] "POST / HTTP/1.1" 200 39 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.6:3000"
+[33;1mcompute-5      | [0mAdded to queue
+[33;1mcompute-5      | [0mStarted resolving loop
+[33;1mcompute-5      | [0mStarted calculations for 6 + 6
+[34mcompute-3      | [0mCalculated 1 + 1: 2
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:14:59:58 +0000] "POST / HTTP/1.1" 200 39 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.5:3000"
+[34mcompute-3      | [0mStarted calculations for 3 + 3
+[35mcompute-2      | [0mAdded to queue
+[33;1mcompute-5      | [0mCalculated 6 + 6: 12
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:15:00:02 +0000] "POST / HTTP/1.1" 200 40 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.7:3000"
+[32mcompute-1      | [0mAdded to queue
+[32mcompute-1      | [0mStarted resolving loop
+[32mcompute-1      | [0mStarted calculations for 9 + 9
+[34mcompute-3      | [0mCalculated 3 + 3: 6
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:15:00:02 +0000] "POST / HTTP/1.1" 200 39 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.5:3000"
+[35mcompute-2      | [0mAdded to queue
+[35mcompute-2      | [0mCalculated 4 + 4: 8
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:15:00:02 +0000] "POST / HTTP/1.1" 200 39 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.6:3000"
+[35mcompute-2      | [0mStarted calculations for 5 + 5
+[32mcompute-1      | [0mCalculated 9 + 9: 18
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:15:00:05 +0000] "POST / HTTP/1.1" 200 40 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.8:3000"
+[35mcompute-2      | [0mCalculated 5 + 5: 10
+[35mcompute-2      | [0mStarted calculations for 7 + 7
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:15:00:06 +0000] "POST / HTTP/1.1" 200 40 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.6:3000"
+[35mcompute-2      | [0mCalculated 7 + 7: 14
+[35mcompute-2      | [0mStarted calculations for 8 + 8
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:15:00:09 +0000] "POST / HTTP/1.1" 200 40 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.6:3000"
+[35mcompute-2      | [0mCalculated 8 + 8: 16
+[35mcompute-2      | [0mStarted calculations for 10 + 10
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:15:00:13 +0000] "POST / HTTP/1.1" 200 40 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.6:3000"
+[35mcompute-2      | [0mCalculated 10 + 10: 20
+[33mload-balancer  | [0m[0;33;1mnginx.1     | [0mcompute.localtest.me 172.25.0.1 - - [26/Nov/2024:15:00:17 +0000] "POST / HTTP/1.1" 200 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "172.25.0.6:3000"
+^CGracefully stopping... (press Ctrl+C again to force)
+[1A[1B[0G[?25l[+] Stopping 0/0
+ [33m⠋[0m Container load-balancer               Stopping                                                                                                      [34m0.1s [0m
+ [33m⠋[0m Container calculator                  Stopping                                                                                                      [34m0.1s [0m
+ [33m⠋[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m0.1s [0m
+ [33m⠋[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m0.1s [0m
+ [33m⠋[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m0.1s [0m
+ [33m⠋[0m Container scaling-exercise-compute-5  Stopping                                                                                                      [34m0.1s [0m
+ [33m⠋[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m0.1s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 0/7
+ [33m⠙[0m Container load-balancer               Stopping                                                                                                      [34m0.2s [0m
+ [33m⠙[0m Container calculator                  Stopping                                                                                                      [34m0.2s [0m
+ [33m⠙[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m0.2s [0m
+ [33m⠙[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m0.2s [0m
+ [33m⠙[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m0.2s [0m
+ [33m⠙[0m Container scaling-exercise-compute-5  Stopping                                                                                                      [34m0.2s [0m
+ [33m⠙[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m0.2s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 0/7
+ [33m⠹[0m Container load-balancer               Stopping                                                                                                      [34m0.3s [0m
+ [33m⠹[0m Container calculator                  Stopping                                                                                                      [34m0.3s [0m
+ [33m⠹[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m0.3s [0m
+ [33m⠹[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m0.3s [0m
+ [33m⠹[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m0.3s [0m
+ [33m⠹[0m Container scaling-exercise-compute-5  Stopping                                                                                                      [34m0.3s [0m
+ [33m⠹[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m0.3s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 0/7
+ [33m⠸[0m Container load-balancer               Stopping                                                                                                      [34m0.4s [0m
+ [33m⠸[0m Container calculator                  Stopping                                                                                                      [34m0.4s [0m
+ [33m⠸[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m0.4s [0m
+ [33m⠸[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m0.4s [0m
+ [33m⠸[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m0.4s [0m
+ [33m⠸[0m Container scaling-exercise-compute-5  Stopping                                                                                                      [34m0.4s [0m
+ [33m⠸[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m0.4s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 0/7
+ [33m⠼[0m Container load-balancer               Stopping                                                                                                      [34m0.5s [0m
+ [33m⠼[0m Container calculator                  Stopping                                                                                                      [34m0.5s [0m
+ [33m⠼[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m0.5s [0m
+ [33m⠼[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m0.5s [0m
+ [33m⠼[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m0.5s [0m
+ [33m⠼[0m Container scaling-exercise-compute-5  Stopping                                                                                                      [34m0.5s [0m
+ [33m⠼[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m0.5s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 0/7
+ [33m⠴[0m Container load-balancer               Stopping                                                                                                      [34m0.6s [0m
+ [33m⠴[0m Container calculator                  Stopping                                                                                                      [34m0.6s [0m
+ [33m⠴[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m0.6s [0m
+ [33m⠴[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m0.6s [0m
+ [33m⠴[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m0.6s [0m
+ [33m⠴[0m Container scaling-exercise-compute-5  Stopping                                                                                                      [34m0.6s [0m
+ [33m⠴[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m0.6s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 0/7
+ [33m⠦[0m Container load-balancer               Stopping                                                                                                      [34m0.7s [0m
+ [33m⠦[0m Container calculator                  Stopping                                                                                                      [34m0.7s [0m
+ [33m⠦[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m0.7s [0m
+ [33m⠦[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m0.7s [0m
+ [33m⠦[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m0.7s [0m
+ [33m⠦[0m Container scaling-exercise-compute-5  Stopping                                                                                                      [34m0.7s [0m
+ [33m⠦[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m0.7s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 0/7
+ [33m⠧[0m Container load-balancer               Stopping                                                                                                      [34m0.8s [0m
+ [33m⠧[0m Container calculator                  Stopping                                                                                                      [34m0.8s [0m
+ [33m⠧[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m0.8s [0m
+ [33m⠧[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m0.8s [0m
+ [33m⠧[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m0.8s [0m
+ [33m⠧[0m Container scaling-exercise-compute-5  Stopping                                                                                                      [34m0.8s [0m
+ [33m⠧[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m0.8s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 1/7
+ [33m⠇[0m Container load-balancer               Stopping                                                                                                      [34m0.9s [0m
+ [33m⠇[0m Container calculator                  Stopping                                                                                                      [34m0.9s [0m
+ [33m⠇[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m0.9s [0m
+ [33m⠇[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m0.9s [0m
+ [33m⠇[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m0.9s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mStopped[0m                                                                                                       [34m0.9s [0m
+ [33m⠇[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 1/7
+ [33m⠏[0m Container load-balancer               Stopping                                                                                                      [34m1.0s [0m
+ [33m⠏[0m Container calculator                  Stopping                                                                                                      [34m1.0s [0m
+ [33m⠏[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m1.0s [0m
+ [33m⠏[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m1.0s [0m
+ [33m⠏[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m1.0s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mStopped[0m                                                                                                       [34m0.9s [0m
+ [33m⠏[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m1.0s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 1/7
+ [33m⠋[0m Container load-balancer               Stopping                                                                                                      [34m1.1s [0m
+ [33m⠋[0m Container calculator                  Stopping                                                                                                      [34m1.1s [0m
+ [33m⠋[0m Container scaling-exercise-compute-1  Stopping                                                                                                      [34m1.1s [0m
+ [33m⠋[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m1.1s [0m
+ [33m⠋[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m1.1s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mStopped[0m                                                                                                       [34m0.9s [0m
+ [33m⠋[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m1.1s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 2/7
+ [33m⠙[0m Container load-balancer               Stopping                                                                                                      [34m1.2s [0m
+ [33m⠙[0m Container calculator                  Stopping                                                                                                      [34m1.2s [0m
+ [32m✔[0m Container scaling-exercise-compute-1  [32mStopped[0m                                                                                                       [34m1.2s [0m
+ [33m⠙[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m1.2s [0m
+ [33m⠙[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m1.2s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mStopped[0m                                                                                                       [34m0.9s [0m
+ [33m⠙[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m1.2s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 2/7
+ [33m⠹[0m Container load-balancer               Stopping                                                                                                      [34m1.3s [0m
+ [33m⠹[0m Container calculator                  Stopping                                                                                                      [34m1.3s [0m
+ [32m✔[0m Container scaling-exercise-compute-1  [32mStopped[0m                                                                                                       [34m1.2s [0m
+ [33m⠹[0m Container scaling-exercise-compute-2  Stopping                                                                                                      [34m1.3s [0m
+ [33m⠹[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m1.3s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mStopped[0m                                                                                                       [34m0.9s [0m
+ [33m⠹[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m1.3s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 4/7
+ [32m✔[0m Container load-balancer               [32mStopped[0m                                                                                                       [34m1.3s [0m
+ [33m⠸[0m Container calculator                  Stopping                                                                                                      [34m1.4s [0m
+ [32m✔[0m Container scaling-exercise-compute-1  [32mStopped[0m                                                                                                       [34m1.2s [0m
+ [32m✔[0m Container scaling-exercise-compute-2  [32mStopped[0m                                                                                                       [34m1.4s [0m
+ [33m⠸[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m1.4s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mStopped[0m                                                                                                       [34m0.9s [0m
+ [33m⠸[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m1.4s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 4/7
+ [32m✔[0m Container load-balancer               [32mStopped[0m                                                                                                       [34m1.3s [0m
+ [33m⠼[0m Container calculator                  Stopping                                                                                                      [34m1.5s [0m
+ [32m✔[0m Container scaling-exercise-compute-1  [32mStopped[0m                                                                                                       [34m1.2s [0m
+ [32m✔[0m Container scaling-exercise-compute-2  [32mStopped[0m                                                                                                       [34m1.4s [0m
+ [33m⠼[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m1.5s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mStopped[0m                                                                                                       [34m0.9s [0m
+ [33m⠼[0m Container scaling-exercise-compute-4  Stopping                                                                                                      [34m1.5s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 5/7
+ [32m✔[0m Container load-balancer               [32mStopped[0m                                                                                                       [34m1.3s [0m
+ [33m⠴[0m Container calculator                  Stopping                                                                                                      [34m1.6s [0m
+ [32m✔[0m Container scaling-exercise-compute-1  [32mStopped[0m                                                                                                       [34m1.2s [0m
+ [32m✔[0m Container scaling-exercise-compute-2  [32mStopped[0m                                                                                                       [34m1.4s [0m
+ [33m⠴[0m Container scaling-exercise-compute-3  Stopping                                                                                                      [34m1.6s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mStopped[0m                                                                                                       [34m0.9s [0m
+ [32m✔[0m Container scaling-exercise-compute-4  [32mStopped[0m                                                                                                       [34m1.5s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Stopping 6/7
+ [32m✔[0m Container load-balancer               [32mStopped[0m                                                                                                       [34m1.3s [0m
+ [33m⠦[0m Container calculator                  Stopping                                                                                                      [34m1.7s [0m
+ [32m✔[0m Container scaling-exercise-compute-1  [32mStopped[0m                                                                                                       [34m1.2s [0m
+ [32m✔[0m Container scaling-exercise-compute-2  [32mStopped[0m                                                                                                       [34m1.4s [0m
+ [32m✔[0m Container scaling-exercise-compute-3  [32mStopped[0m                                                                                                       [34m1.7s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mStopped[0m                                                                                                       [34m0.9s [0m
+ [32m✔[0m Container scaling-exercise-compute-4  [32mStopped[0m                                                                                                       [34m1.5s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[34m[+] Stopping 7/7[0m
+ [32m✔[0m Container load-balancer               [32mStopped[0m                                                                                                       [34m1.3s [0m
+ [32m✔[0m Container calculator                  [32mStopped[0m                                                                                                       [34m1.8s [0m
+ [32m✔[0m Container scaling-exercise-compute-1  [32mStopped[0m                                                                                                       [34m1.2s [0m
+ [32m✔[0m Container scaling-exercise-compute-2  [32mStopped[0m                                                                                                       [34m1.4s [0m
+ [32m✔[0m Container scaling-exercise-compute-3  [32mStopped[0m                                                                                                       [34m1.7s [0m
+ [32m✔[0m Container scaling-exercise-compute-5  [32mStopped[0m                                                                                                       [34m0.9s [0m
+ [32m✔[0m Container scaling-exercise-compute-4  [32mStopped[0m                                                                                                       [34m1.5s [0m
+[?25hcanceled
+[?2004h]0;root@DESKTOP-6SJ4ORQ: /home/oz/devopswithdocker/part2/material-applications/scaling-exerciseroot@DESKTOP-6SJ4ORQ:/home/oz/devopswithdocker/part2/material-applications/scaling-exercise# exit
+[?2004lexit
+
+Script done on 2024-11-26 17:00:25+02:00 [COMMAND_EXIT_CODE="130"]
