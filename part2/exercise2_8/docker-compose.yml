@@ -1,0 +1,43 @@
+services:
+
+  backend:
+    image: exercise1-13
+    build: .
+    container_name: backend
+    environment:
+      - REDIS_HOST=redis
+      - POSTGRES_HOST=db
+      - POSTGRES_PASSWORD=example
+      - REQUEST_ORIGIN=http://localhost:80
+  
+  redis:
+    container_name: redis
+    image: redis
+
+  frontend:
+    image: exercise1-12
+    build: .
+    container_name: frontend
+    environment:
+      - REACT_APP_BACKEND_URL=http://localhost:80
+
+  db:
+    image: postgres:13.2-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: example
+    container_name: db_redmine
+    volumes:
+      - type: bind
+        source: ./database
+        target: /var/lib/postgresql/data
+
+  rproxy:
+    image: nginx
+    container_name: r-proxy
+    ports:
+      - 127.0.0.1:80:80
+    volumes:
+      - type: bind
+        source: ./nginx.conf
+        target: /etc/nginx/nginx.conf
