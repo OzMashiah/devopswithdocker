@@ -1,0 +1,15 @@
+services:
+
+  backend:
+    image: exercise1-13
+    build: .
+    ports:
+      - 127.0.0.1:8080:8080
+    container_name: backend
+
+  frontend:
+    image: exercise1-12
+    build: .
+    ports:
+      - 127.0.0.1:5000:5000
+    container_name: frontend
