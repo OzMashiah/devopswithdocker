@@ -21,6 +21,6 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         context: .
-        file: ./part3/material-applications/express-app/Dockerfile
+        file: ./part3/express-app/Dockerfile
         push: true
         tags: mashiahoz/watchtowertesting:latest
