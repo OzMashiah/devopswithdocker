@@ -20,7 +20,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v6
       with:
-        context: ./part1/exercise1-15
+        context: ./part1/exercise1_15
         push: true
         tags: mashiahoz/exercise1-15:latest
 
