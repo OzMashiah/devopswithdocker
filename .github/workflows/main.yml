@@ -21,4 +21,4 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: mashiahoz/watchtowertesting::latest
+        tags: mashiahoz/watchtowertesting:latest
