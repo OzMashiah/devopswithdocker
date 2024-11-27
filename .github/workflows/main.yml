@@ -20,6 +20,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v6
       with:
-        context: ../../part3/material-applications/express-app
+        context: .
+        file: ./part3/material-applications/express-app/Dockerfile
         push: true
         tags: mashiahoz/watchtowertesting:latest
