@@ -1,3 +1,11 @@
 [submodule "part1/material-applications"] 
   path = part1/material-applications
   url = https://github.com/docker-hy/material-applications
+
+[submodule "part2/material-applications"]
+  path = part2/material-applications
+  url = https://github.com/docker-hy/material-applications
+
+[submodule "part3/material-applications"]
+  path = part3/material-applications
+  url = https://github.com/docker-hy/material-applications
