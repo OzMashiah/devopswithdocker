@@ -20,6 +20,13 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v6
       with:
-        context: ./part3/express-app
+        context: ./part1/exercise1-15
         push: true
-        tags: mashiahoz/watchtowertesting:latest
+        tags: mashiahoz/exercise1-15:latest
+
+    - name: deploy new image on render cloud
+      uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.MY_RENDER_SERVICE_ID }}
+          api-key: ${{ secrets.MY_RENDER_API_KEY }}
+          wait-for-success: true
