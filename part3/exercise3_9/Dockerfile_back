@@ -1,0 +1,29 @@
+FROM golang:1.16-alpine3.15 as bob
+
+WORKDIR /usr/src/app
+
+COPY . ./
+
+ENV REQUEST_ORIGIN=http://localhost:5000
+
+RUN go build && \ 
+adduser --disabled-password appuser && \
+chown appuser . && \
+rm -rf go* && \
+rm -rf common && \
+rm -rf /usr/share/ && \
+rm -rf /usr/local/ && \
+rm -rf /usr/lib
+
+USER appuser
+
+EXPOSE 8080
+
+
+FROM alpine:3.8.4
+
+WORKDIR /usr/src/app
+
+COPY --from=bob /usr/src/app/server /usr/src/app/server
+
+CMD ./server
