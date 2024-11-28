@@ -1,0 +1,22 @@
+FROM golang:1.16
+
+WORKDIR /usr/src/app
+
+COPY . ./
+
+ENV REQUEST_ORIGIN=http://localhost:5000
+
+RUN go build && \ 
+adduser appuser && \
+chown appuser . && \
+rm -rf go* && \
+rm -rf common && \
+rm -rf /usr/share/ && \
+rm -rf /usr/local/ && \
+rm -rf /usr/lib
+
+USER appuser
+
+EXPOSE 8080
+
+CMD ./server

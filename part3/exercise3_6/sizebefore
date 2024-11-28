@@ -1,0 +1,10 @@
+Script started on 2024-11-28 11:50:28+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="156" LINES="41"]
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part3/exercise3_6[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part3/exercise3_6[00m$ sudo docker container rm 8e c3[2@kill[C[C[C[C[C[C[5Pls -akill 8e c3[2Prm[C[C[C[C[C[C[Ksudo docker container rm 8e c3[2@kill[C[C[C[C[C[C[5Pls -abuild . -f Dockerfile_front -t exercise3-5front[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[36Pcd ../example-frontend/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo docker imagels -a [K[K[K[K[K[K ls -a exercise3-5*
+[?2004l[sudo] password for oz: 
+REPOSITORY         TAG       IMAGE ID       CREATED          SIZE
+exercise3-5back    latest    f4bf2ae42201   15 minutes ago   1.07GB
+exercise3-5front   latest    11462fbc7c59   18 minutes ago   1.28GB
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part3/exercise3_6[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part3/exercise3_6[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-28 11:50:47+02:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,10 @@
+Script started on 2024-11-28 13:07:54+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="156" LINES="41"]
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part3/exercise3_6[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part3/exercise3_6[00m$ exitdu -sm /var/lib/apt/*[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo docker c[Kimage ls -[Kexercie[Kse3-6*
+[?2004l[sudo] password for oz: 
+REPOSITORY         TAG       IMAGE ID       CREATED          SIZE
+exercise3-6back    latest    563215722013   37 minutes ago   1.07GB
+exercise3-6front   latest    ceb46727c971   55 minutes ago   1.1GB
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part3/exercise3_6[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part3/exercise3_6[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-28 13:08:07+02:00 [COMMAND_EXIT_CODE="0"]
