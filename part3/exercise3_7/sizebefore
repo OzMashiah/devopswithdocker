@@ -1,0 +1,10 @@
+Script started on 2024-11-28 13:12:54+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="156" LINES="41"]
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part3/exercise3_7[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part3/exercise3_7[00m$ sudo docker iamge ls [K[K[K[K[K[K[K[Kmage ls exercise3-6*
+[?2004l[sudo] password for oz: 
+REPOSITORY         TAG       IMAGE ID       CREATED             SIZE
+exercise3-6back    latest    563215722013   42 minutes ago      1.07GB
+exercise3-6front   latest    ceb46727c971   About an hour ago   1.1GB
+[?2004h]0;oz@DESKTOP-6SJ4ORQ: ~/devopswithdocker/part3/exercise3_7[01;32moz@DESKTOP-6SJ4ORQ[00m:[01;34m~/devopswithdocker/part3/exercise3_7[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-28 13:13:08+02:00 [COMMAND_EXIT_CODE="0"]
